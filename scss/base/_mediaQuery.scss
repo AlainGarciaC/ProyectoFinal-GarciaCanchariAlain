@@ -1,0 +1,57 @@
+/* MediaQuery*/
+
+@media screen and (max-width:481px) {
+    header {
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .textosImage {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .imagenPrincipal {
+        width: 90%;
+    }
+
+    .imagenPort {
+        width: 44%;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card {
+        width: 90%;
+    }
+
+    .cards .card:first-child {
+        margin-bottom: 30px;
+    }
+
+    .servicio-cont {
+        justify-content: center;
+        flex-direction: column;   
+    }
+
+    .servicioIndividual {
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicioIndividual:nth-child(1), .servicioIndividual:nth-child(2) {
+        margin-bottom: 60px;
+    }
+
+    .servicioIndividual img {
+        width: 90%;
+    }
+}

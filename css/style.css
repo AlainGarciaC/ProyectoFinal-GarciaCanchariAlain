@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+.titulo {
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px; }
+
+/* Header */
+header {
+  width: 100%;
+  height: 700px;
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c536471, #203a436b, #0f202773), url(../multimedia/fabio-santaniello-bruun-iKxjTt8oCdw-unsplash.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c536471, #203a436b, #0f202773), url(../multimedia/fabio-santaniello-bruun-iKxjTt8oCdw-unsplash.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+
+nav {
+  text-align: right;
+  padding: 30px 50px 0 0; }
+
+nav div ul li a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 10px; }
+
+nav div ul li a:hover {
+  text-decoration: underline; }
+
+header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+.textos-header h1 {
+  font-size: 50px;
+  color: white; }
+
+.textos-header h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: white; }
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+/* Fin Header */
+/* main */
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: space-between; }
+
+.imagenPrincipal {
+  width: 48%; }
+
+.sobre-nosotros .textosImage {
+  width: 48%; }
+
+.textosImage h3 {
+  margin-bottom: 15px; }
+
+.textosImage h3 span {
+  background: #4d0686;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 5px; }
+
+.textosImage p {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify; }
+
+/* Portafolio */
+.portafolio {
+  background: #f2f2f2; }
+
+.galeriaPort {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.imagenPort {
+  width: 24%;
+  height: 150px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5); }
+
+.imagenPort img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; }
+
+.hoverGaleria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: rgba(75, 6, 132, 0.7);
+  transition: transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.hoverGaleria img {
+  width: 50%; }
+
+.hoverGaleria p {
+  color: white; }
+
+.imagenPort:hover .hoverGaleria {
+  transform: scale(1); }
+
+/* Clientes */
+.cards {
+  display: flex;
+  justify-content: space-evenly; }
+
+.cards .card {
+  background: lightblue;
+  display: flex;
+  width: 46%;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
+
+.cards .card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: block; }
+
+.cards .card > .texto-card {
+  width: 60%;
+  color: black; }
+
+.cards .card > .texto-card p {
+  font-weight: 300;
+  padding-top: 5px; }
+
+.servicios-nuestros {
+  background: white;
+  padding-bottom: 30px; }
+
+.servicio-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.servicioIndividual {
+  width: 28%;
+  text-align: center; }
+
+.servicioIndividual img {
+  width: 90%; }
+
+.servicioIndividual h3 {
+  margin: 10px 0; }
+
+.servicioIndividual p {
+  font-weight: 300;
+  text-align: justify; }
+
+/* Fin main */
+/* Footer */
+footer {
+  background: #726d6d;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden; }
+
+.contenedorFooter {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc; }
+
+.contentFooter {
+  text-align: center; }
+
+.contentFoo {
+  text-align: center; }
+
+.contentFoo h4 {
+  color: white;
+  border-bottom: 3px solid #8c62da;
+  padding-bottom: 5px;
+  margin-bottom: 10px; }
+
+.contentFoo p {
+  color: #ccc; }
+
+.tituloFinal {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px 0 0 0;
+  padding: 20px;
+  color: #9e9797; }
+
+/* Fin footer */
+/* MediaQuery*/
+@media screen and (max-width: 481px) {
+  header {
+    background-position: center; }
+  .contenedor-sobre-nosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .sobre-nosotros .textosImage {
+    width: 90%;
+    padding: 20px; }
+  .imagenPrincipal {
+    width: 90%; }
+  .imagenPort {
+    width: 44%; }
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .cards .card {
+    width: 90%; }
+  .cards .card:first-child {
+    margin-bottom: 30px; }
+  .servicio-cont {
+    justify-content: center;
+    flex-direction: column; }
+  .servicioIndividual {
+    width: 100%;
+    text-align: center; }
+  .servicioIndividual:nth-child(1), .servicioIndividual:nth-child(2) {
+    margin-bottom: 60px; }
+  .servicioIndividual img {
+    width: 90%; } }
